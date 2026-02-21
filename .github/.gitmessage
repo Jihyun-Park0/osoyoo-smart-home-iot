@@ -1,0 +1,70 @@
+
+
+# ==== Format ====
+# :emoji: Subject
+#
+# Commit body... (詳細な説明)
+
+# ==== Examples ====
+# :bug: インポーターのバグを修正 #12334
+# :sparkles: ポップアップ通知機能を追加
+# :memo: contrib.md の誤字を修正 [SKIP CI]
+
+# ==== Tips ====
+# コミットメッセージに [CI SKIP] または [SKIP CI] を含めると、CIの実行をスキップできます。
+
+# ==== The Seven Rules (7つのルール) ====
+# 1. 題名(Subject)と本文(Body)の間は空行を入れる
+# 2. 題名は50文字以内にする
+# 3. 題名の先頭は大文字にする(英語の場合) / 日本語は簡潔に
+# 4. 題名の最後に句点(.)を入れない
+# 5. 題名は命令形で記述する / 日本語は '~を実装' '~を修正' 形式
+# 6. 本文は72文字で改行する
+# 7. 本文には「どのように(How)」ではなく「何を・なぜ(What/Why)」を書く
+
+# ==== Emojis (主要) ====
+# 🔥 :fire: - コードやファイルの削除
+# 💄 :lipstick: - UIやスタイルファイルの更新
+# 🎨 :art: - コード構造・フォーマットの改善 (見た目の整頓)
+# 🚑 :ambulance: - 緊急のホットフィックス (重大なバグ修正)
+# 🐛 :bug: - バグの修正
+# 💚 :green_heart: - CIビルドの修正
+# ✨ :sparkles: - 新機能の実装
+# ⚡️ :zap: - パフォーマンス改善
+# 🔨 :hammer: - コードのリファクタリング
+# 🚨 :rotating_light: - リンター警告の削除
+# 🚧 :construction: - 作業中 (WIP)
+# ⬆️ :arrow_up: - 依存関係のアップデート
+# 🔒 :lock: - セキュリティ問題の修正
+# ✏️ :pencil2: - タイポ(誤字)の修正
+# 📝 :memo: - ドキュメント(READMEなど)の作成・修正
+# 💥 :boom: - 破壊的な変更 (Breaking changes)
+# 👌 :ok_hand: - コードレビューによる修正
+
+# ==== More emojis ====
+# 🚀 :rocket: - デプロイ関連
+# ✅ :white_check_mark: - テストの追加
+# 🔖 :bookmark: - リリース / バージョンタグ
+# ⬇️ :arrow_down: - 依存関係のダ우ングレード
+# 👷 :construction_worker: - CIビルドシステムの追加
+# 📈 :chart_with_upwards_trend: - 分析・トラッキングコードの追加
+# ➖ :heavy_minus_sign: - 依存関係の削除
+# 🐳 :whale: - Docker関連の作業
+# ➕ :heavy_plus_sign: - 依存関係の追加
+# 🔧 :wrench: - 設定ファイルの変更
+# 🌐 :globe_with_meridians: - 国際化・ローカライゼーション (多言語対応)
+# 💩 :hankey: - 改善が必要な質の低いコード (クソコード)
+# ⏪ :rewind: - 変更の切り戻し (リバート)
+# 🔀 :twisted_rightwards_arrows: - ブランチのマージ
+# 📦 :package: - コンパイル済みファイルやパッケージの更新
+# 👽 :alien: - 外部APIの変更に伴うコード修正
+# 🚚 :truck: - ファイルの移動や名前変更
+# 📄 :page_facing_up: - ライセンスの追加・更新
+# 🍱 :bento: - アセットファイル(画像など)の追加・更新
+# ♿️ :wheelchair: - アクセシビリティの向上
+# 💡 :bulb: - ソースコードのドキュメント作成 (Javadocなど)
+# 🍻 :beers: - ほろ酔い状態で書いたコード
+# 💬 :speech_balloon: - テキストやリテラルの更新
+# 🗃 :card_file_box: - データベース関連の変更
+# 🔌 :electric_plug: - ピンアサインや回路構成の変更
+# 📸 :camera: - 動作確認の画像や動画を追加 (エビデンス)

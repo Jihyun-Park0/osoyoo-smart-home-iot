@@ -1,0 +1,15 @@
+# Arduino Build Artifacts
+build/
+bin/
+*.elf
+*.hex
+*.o
+*.d
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE settings (VS Code / Arduino IDE)
+.vscode/
+.arduino/
