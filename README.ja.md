@@ -40,7 +40,7 @@ osoyoo-smart-home-iot/
 4. **[Step 4] システム統合:** リレー制御、RFIDセキュリティおよび最終プロジェクト (Lesson 15-19)
 
 ### ✅ レッスン・チェックリスト
-- [ ] **Lesson 1:** モノのインターネット (Internet of Things)
+- [x] **Lesson 1:** モノのインターネット (Internet of Things)
 - [ ] **Lesson 2:** モデルの組み立て (Model Installation)
 - [ ] **Lesson 3:** ハローワールド (Hello World)
 - [ ] **Lesson 4:** リモート制御LED (Remote Control LED)
