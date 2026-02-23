@@ -22,42 +22,41 @@ This project is dedicated to mastering IoT systems through the [OSOYOO Smart Hom
 
 ## 📂 Structure
 
-- `src/`: Step-by-step source code for each lesson.
-- `docs/`: Circuit diagrams, sensor specifications, and visual evidence of operation.
+```
+osoyoo-smart-home-iot/
+├── firmware/          # [Embedded] Arduino source and libraries
+│   ├── sample/        # Sample code for each lesson (.ino)
+│   └── library/       # Project required libraries
+└── docs/              # GCircuit diagrams, sensor specifications, and visual evidence of operation.
+```
 
 ## 📖 Roadmap
 
 Follow the official [OSOYOO Tutorial Lessons](https://osoyoo.com/2019/10/18/osoyoo-smart-home-iot-learning-kit-with-mega2560-introduction/) to master IoT:
 
-- **Step 1: Environment Setup & Basic Output** (Lesson 1-3)
-  - Setting up the Mega-IoT shield and basic I/O control.
-- **Step 2: Environmental Sensing** (Lesson 4-7, 12, 14, 17)
-  - Acquisition of data from Gas, Flame, Temp/Humidity, and Sound sensors.
-- **Step 3: Actuator & Interaction** (Lesson 8-10, 13)
-  - Implementing User Interfaces using LCDs, Keypads, and Servos.
-- **Step 4: Wireless Control & Security** (Lesson 11, 15-16)
-  - Building security systems with IR Remote, PIR, and RFID.
-- **Step 5: IoT Networking & Web Server** (Lesson 18-19)
-  - Finalizing the smart home with WiFi connectivity and Web control.
+1. **[Step 1] Basics & Assembly:** Understanding IoT and Model assembly (Lesson 1-2)
+2. **[Step 2] Basic I/O Control:** LEDs, Buzzers, and Temp/Humidity sensors (Lesson 3-7)
+3. **[Step 3] Advanced Modules:** Motors, Gas/Flame/Sound/Light sensors, and LCD (Lesson 8-14)
+4. **[Step 4] System Integration:** Relays, RFID Security, and Final Project (Lesson 15-19)
 
 ### ✅ Lesson Checklist
 
-- [ ] **Lesson 1:** Preparing for Smart Home Kit
-- [ ] **Lesson 2:** Control LED with Button
-- [ ] **Lesson 3:** Using Buzzer for Alarm
-- [ ] **Lesson 4:** Gas Sensor (MQ-2)
-- [ ] **Lesson 5:** Flame Sensor
-- [ ] **Lesson 6:** Light Sensor (Photoresistor)
-- [ ] **Lesson 7:** Temperature & Humidity (DHT11)
-- [ ] **Lesson 8:** I2C Liquid Crystal Display (LCD)
-- [ ] **Lesson 9:** Control Servo Motor
-- [ ] **Lesson 10:** 4x4 Keypad Module
-- [ ] **Lesson 11:** Infrared Remote Control
-- [ ] **Lesson 12:** Water Level Sensor
-- [ ] **Lesson 13:** RGB LED Module
-- [ ] **Lesson 14:** Soil Moisture Sensor
-- [ ] **Lesson 15:** PIR Motion Sensor
-- [ ] **Lesson 16:** RFID Module Access Control
-- [ ] **Lesson 17:** Sound Sensor
-- [ ] **Lesson 18:** ESP8266 WiFi Shield
-- [ ] **Lesson 19:** Smart Home IoT Web Server
+- [ ] **Lesson 1:** Internet of Things
+- [ ] **Lesson 2:** Medel Installation
+- [ ] **Lesson 3:** Hello World
+- [ ] **Lesson 4:** Remote Control LED
+- [ ] **Lesson 5:** RGB Module
+- [ ] **Lesson 6:** Active Buzzer
+- [ ] **Lesson 7:** DHT11 Sensor
+- [ ] **Lesson 8:** Switching Door
+- [ ] **Lesson 9:** Gas Detection
+- [ ] **Lesson 10:** Flame Detection
+- [ ] **Lesson 11:** Sound Sensor
+- [ ] **Lesson 12:** Light Sensor
+- [ ] **Lesson 13:** PIR Motion Detection
+- [ ] **Lesson 14:** LCD Screen
+- [ ] **Lesson 15:** 1-Channel Relay
+- [ ] **Lesson 16:** RFID Switching Door
+- [ ] **Lesson 17:** Tracing Human Movement
+- [ ] **Lesson 18:** Two Mega-IoT Devices
+- [ ] **Lesson 19:** IoT Capstone Project

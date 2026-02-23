@@ -22,42 +22,41 @@
 
 ## 📂 폴더 구조
 
-- `src/`: 각 레슨별 단계별 소스 코드.
-- `docs/`: 회로도, 센서 사양서 및 실제 동작 증거 자료.
+```
+osoyoo-smart-home-iot/
+├── firmware/          # [Embedded] 아두이노 소스 및 라이브러리
+│   ├── sample/        # Lesson별 예제 코드 (.ino)
+│   └── library/       # 프로젝트 필수 라이브러리
+└── docs/              # 회로도, 센서 사양서 및 실제 동작 증거 자료.
+```
 
 ## 📖 로드맵
 
 [OSOYOO 공식 튜토리얼](https://osoyoo.com/2019/10/18/osoyoo-smart-home-iot-learning-kit-with-mega2560-introduction/)의 과정을 따라 IoT 시스템을 단계별로 학습합니다:
 
-- **1단계: 환경 설정 및 기본 출력** (레슨 1-3)
-  - Mega-IoT 쉴드 설정 및 기본적인 입출력 제어 학습.
-- **2단계: 환경 데이터 수집** (레슨 4-7, 12, 14, 17)
-  - 가스, 화재, 온습도, 소리 센서 등을 활용한 환경 정보 수집.
-- **3단계: 액추에이터 및 상호작용** (레슨 8-10, 13)
-  - LCD, 키패드, 서보 모터를 활용한 사용자 인터페이스 구현.
-- **4단계: 무선 제어 및 보안 시스템** (레슨 11, 15-16)
-  - 적외선 리모컨 제어 및 PIR, RFID 기반의 보안 시나리오 구축.
-- **5단계: IoT 네트워크 및 웹 서버** (레슨 18-19)
-  - WiFi 연결을 통한 원격 모니터링 및 제어 시스템 완성.
+1. **[Step 1] 기초 및 조립:** IoT 개념 이해 및 하드웨어 모델 조립 (Lesson 1-2)
+2. **[Step 2] 기본 입출력 제어:** LED, 부저, 온습도 센서 등 기초 모듈 제어 (Lesson 3-7)
+3. **[Step 3] 고급 센서 및 장치 활용:** 서보 모터, 가스/불꽃/소리/광센서 및 LCD 출력 (Lesson 8-14)
+4. **[Step 4] 시스템 심화 및 통합:** 릴레이 제어, RFID 보안 및 최종 통합 프로젝트 완성 (Lesson 15-19)
 
 ### ✅ 레슨 체크리스트
 
-- [ ] **레슨 1:** 스마트 홈 키트 준비 및 설정
-- [ ] **레슨 2:** 버튼으로 LED 제어하기
-- [ ] **레슨 3:** 부저를 이용한 알람 구현
-- [ ] **레슨 4:** 가스 센서 (MQ-2) 활용
-- [ ] **레슨 5:** 화재 감지 센서 활용
-- [ ] **레슨 6:** 조도 센서 (광저항기) 활용
-- [ ] **레슨 7:** 온습도 센서 (DHT11) 활용
-- [ ] **레슨 8:** I2C LCD 디스플레이 제어
-- [ ] **레슨 9:** 서보 모터 제어 (문 개폐 로직)
-- [ ] **레슨 10:** 4x4 키패드 모듈 입력
-- [ ] **레슨 11:** 적외선(IR) 리모컨 제어
-- [ ] **레슨 12:** 수위 센서 활용
-- [ ] **레슨 13:** RGB LED 모듈 제어
-- [ ] **레슨 14:** 토양 습도 센서 활용
-- [ ] **레슨 15:** PIR 모션 센서 (침입 감지)
-- [ ] **레슨 16:** RFID 모듈을 이용한 출입 통제
-- [ ] **레슨 17:** 사운드 센서 활용
-- [ ] **레슨 18:** ESP8266 WiFi 쉴드 연결
-- [ ] **레슨 19:** 스마트 홈 IoT 웹 서버 구축
+- [ ] **Lesson 1:** 사물인터넷 (Internet of Things)
+- [ ] **Lesson 2:** 모델 조립 (Model Installation)
+- [ ] **Lesson 3:** 헬로 월드 (Hello World)
+- [ ] **Lesson 4:** 원격 제어 LED (Remote Control LED)
+- [ ] **Lesson 5:** RGB 모듈 (RGB Module)
+- [ ] **Lesson 6:** 액티브 부저 (Active Buzzer)
+- [ ] **Lesson 7:** DHT11 온습도 센서 (DHT11 Sensor)
+- [ ] **Lesson 8:** 문 개폐 제어 (Switching Door)
+- [ ] **Lesson 9:** 가스 감지 (Gas Detection)
+- [ ] **Lesson 10:** 불꽃 감지 (Flame Detection)
+- [ ] **Lesson 11:** 소리 센서 (Sound Sensor)
+- [ ] **Lesson 12:** 조도 센서 (Light Sensor)
+- [ ] **Lesson 13:** PIR 인체 감지 (PIR Motion Detection)
+- [ ] **Lesson 14:** LCD 스크린 (LCD Screen)
+- [ ] **Lesson 15:** 1채널 릴레이 (1-Channel Relay)
+- [ ] **Lesson 16:** RFID 문 개폐 시스템 (RFID Switching Door)
+- [ ] **Lesson 17:** 인간 움직임 추적 (Tracing Human Movement)
+- [ ] **Lesson 18:** 두 대의 Mega-IoT 장치 연동 (Two Mega-IoT Devices)
+- [ ] **Lesson 19:** IoT 캡스톤 프로젝트 (IoT Capstone Project)
