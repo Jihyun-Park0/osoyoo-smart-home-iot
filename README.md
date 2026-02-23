@@ -41,7 +41,7 @@ Follow the official [OSOYOO Tutorial Lessons](https://osoyoo.com/2019/10/18/osoy
 
 ### ✅ Lesson Checklist
 
-- [ ] **Lesson 1:** Internet of Things
+- [x] **Lesson 1:** Internet of Things
 - [ ] **Lesson 2:** Medel Installation
 - [ ] **Lesson 3:** Hello World
 - [ ] **Lesson 4:** Remote Control LED
