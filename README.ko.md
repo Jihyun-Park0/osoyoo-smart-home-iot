@@ -26,6 +26,7 @@
 osoyoo-smart-home-iot/
 ├── firmware/          # [Embedded] 아두이노 소스 및 라이브러리
 │   ├── sample/        # Lesson별 예제 코드 (.ino)
+│   └── src/           # 실습 및 리팩토링 코드
 │   └── library/       # 프로젝트 필수 라이브러리
 └── docs/              # 회로도, 센서 사양서 및 실제 동작 증거 자료.
 ```

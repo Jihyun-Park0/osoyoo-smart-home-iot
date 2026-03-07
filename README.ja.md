@@ -26,6 +26,7 @@
 osoyoo-smart-home-iot/
 ├── firmware/          # [Embedded] Arduinoソースおよびライブラリ
 │   ├── sample/        # レッスン別サンプルコード (.ino)
+│   └── src/           # 実習およびリファクタリングコード
 │   └── library/       # プロジェクト必須ライブラリ
 └── docs/              # 回路図、センサー仕様書、および動作エビデンス資料
 ```
