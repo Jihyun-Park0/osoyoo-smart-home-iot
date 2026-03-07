@@ -13,3 +13,9 @@ Thumbs.db
 # IDE settings (VS Code / Arduino IDE)
 .vscode/
 .arduino/
+
+# Android Studio / IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+.gradle/
