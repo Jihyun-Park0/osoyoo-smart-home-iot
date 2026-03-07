@@ -42,7 +42,7 @@ osoyoo-smart-home-iot/
 ### ✅ 레슨 체크리스트
 
 - [x] **Lesson 1:** 사물인터넷 (Internet of Things)
-- [ ] **Lesson 2:** 모델 조립 (Model Installation)
+- [x] **Lesson 2:** 모델 조립 (Model Installation)
 - [ ] **Lesson 3:** 헬로 월드 (Hello World)
 - [ ] **Lesson 4:** 원격 제어 LED (Remote Control LED)
 - [ ] **Lesson 5:** RGB 모듈 (RGB Module)
