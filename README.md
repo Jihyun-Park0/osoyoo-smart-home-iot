@@ -26,6 +26,7 @@ This project is dedicated to mastering IoT systems through the [OSOYOO Smart Hom
 osoyoo-smart-home-iot/
 ├── firmware/          # [Embedded] Arduino source and libraries
 │   ├── sample/        # Sample code for each lesson (.ino)
+│   └── src/           # Practice and refactored code
 │   └── library/       # Project required libraries
 └── docs/              # GCircuit diagrams, sensor specifications, and visual evidence of operation.
 ```
