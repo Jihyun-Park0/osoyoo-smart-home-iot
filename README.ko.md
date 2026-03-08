@@ -44,7 +44,7 @@ osoyoo-smart-home-iot/
 
 - [x] **Lesson 1:** 사물인터넷 (Internet of Things)
 - [x] **Lesson 2:** 모델 조립 (Model Installation)
-- [ ] **Lesson 3:** 헬로 월드 (Hello World)
+- [x] **Lesson 3:** 헬로 월드 (Hello World)
 - [ ] **Lesson 4:** 원격 제어 LED (Remote Control LED)
 - [ ] **Lesson 5:** RGB 모듈 (RGB Module)
 - [ ] **Lesson 6:** 액티브 부저 (Active Buzzer)
