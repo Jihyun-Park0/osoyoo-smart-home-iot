@@ -45,7 +45,7 @@ Follow the official [OSOYOO Tutorial Lessons](https://osoyoo.com/2019/10/18/osoy
 - [x] **Lesson 1:** Internet of Things
 - [x] **Lesson 2:** Model Installation
 - [x] **Lesson 3:** Hello World
-- [ ] **Lesson 4:** Remote Control LED
+- [x] **Lesson 4:** Remote Control LED
 - [ ] **Lesson 5:** RGB Module
 - [ ] **Lesson 6:** Active Buzzer
 - [ ] **Lesson 7:** DHT11 Sensor
