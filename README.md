@@ -47,7 +47,7 @@ Follow the official [OSOYOO Tutorial Lessons](https://osoyoo.com/2019/10/18/osoy
 - [x] **Lesson 3:** Hello World
 - [x] **Lesson 4:** Remote Control LED
 - [x] **Lesson 5:** RGB Module
-- [ ] **Lesson 6:** Active Buzzer
+- [x] **Lesson 6:** Active Buzzer
 - [ ] **Lesson 7:** DHT11 Sensor
 - [ ] **Lesson 8:** Switching Door
 - [ ] **Lesson 9:** Gas Detection
