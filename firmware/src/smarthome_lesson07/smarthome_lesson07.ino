@@ -21,8 +21,10 @@ dht DHT;
 SoftwareSerial softserial(A9, A8); // RX, TX
 //#endif
 
-char ssid[] = "******";            // your network SSID (name)
-char pass[] = "******";        // your network password
+#include <arduino_secrets.h>
+
+char ssid[] = SECRET_SSID;
+char pass[] = SECRET_PASS;
 int status = WL_IDLE_STATUS;
 int reqCount = 0;                // number of requests received
 
@@ -42,7 +44,7 @@ void setup()
   softserial.begin(9600);
   softserial.println("AT+UART_DEF=9600,8,1,0,0\r\n");
   softserial.write("AT+RST\r\n");
-  delay(100);
+  delay(2000);
   softserial.begin(9600);
   // initialize ESP module
   WiFi.init(&softserial);
@@ -80,7 +82,7 @@ void loop()
   Serial.print(" Temparature ");
   Serial.print(DHT.temperature, 1);
   Serial.println('C');
- // delay(2000);
+  delay(500);
   // listen for incoming clients
   WiFiEspClient client = server.available();
   if (client) {
@@ -103,7 +105,7 @@ void loop()
             "HTTP/1.1 200 OK\r\n"
             "Content-Type: text/html\r\n"
             "Connection: close\r\n"  // the connection will be closed after completion of the response
-            "Refresh: 20\r\n"        // refresh the page automatically every 20 sec
+            "Refresh: 5\r\n"        // refresh the page automatically every 5 sec
             "\r\n");
           client.print("<!DOCTYPE HTML>\r\n");
           client.print("<html>\r\n");
