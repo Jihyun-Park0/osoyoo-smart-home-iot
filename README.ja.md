@@ -47,7 +47,7 @@ osoyoo-smart-home-iot/
 - [x] **Lesson 4:** リモート制御LED (Remote Control LED)
 - [x] **Lesson 5:** RGBモジュール (RGB Module)
 - [x] **Lesson 6:** アクティブブザー (Active Buzzer)
-- [ ] **Lesson 7:** DHT11温湿度センサー (DHT11 Sensor)
+- [x] **Lesson 7:** DHT11温湿度センサー (DHT11 Sensor)
 - [ ] **Lesson 8:** ドアの開閉制御 (Switching Door)
 - [ ] **Lesson 9:** ガス検知 (Gas Detection)
 - [ ] **Lesson 10:** 炎検知 (Flame Detection)
