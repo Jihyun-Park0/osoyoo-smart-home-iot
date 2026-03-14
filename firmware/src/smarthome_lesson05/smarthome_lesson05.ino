@@ -17,8 +17,10 @@
 SoftwareSerial softserial(A9, A8); // RX, TX
 //#endif
 
-char ssid[] = "******";            // your network SSID (name)
-char pass[] = "******";        // your network password
+#include <arduino_secrets.h>
+
+char ssid[] = SECRET_SSID;
+char pass[] = SECRET_PASS;
 int status = WL_IDLE_STATUS;
 
 const int redPin = 24; // R connected to digital pin 24 
