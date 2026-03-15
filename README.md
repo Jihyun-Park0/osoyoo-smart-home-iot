@@ -50,7 +50,7 @@ Follow the official [OSOYOO Tutorial Lessons](https://osoyoo.com/2019/10/18/osoy
 - [x] **Lesson 6:** Active Buzzer
 - [x] **Lesson 7:** DHT11 Sensor
 - [x] **Lesson 8:** Switching Door
-- [ ] **Lesson 9:** Gas Detection
+- [x] **Lesson 9:** Gas Detection
 - [ ] **Lesson 10:** Flame Detection
 - [ ] **Lesson 11:** Sound Sensor
 - [ ] **Lesson 12:** Light Sensor
