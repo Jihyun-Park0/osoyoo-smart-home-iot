@@ -49,7 +49,7 @@ osoyoo-smart-home-iot/
 - [x] **Lesson 5:** RGB 모듈 (RGB Module)
 - [x] **Lesson 6:** 액티브 부저 (Active Buzzer)
 - [x] **Lesson 7:** DHT11 온습도 센서 (DHT11 Sensor)
-- [ ] **Lesson 8:** 문 개폐 제어 (Switching Door)
+- [x] **Lesson 8:** 문 개폐 제어 (Switching Door)
 - [ ] **Lesson 9:** 가스 감지 (Gas Detection)
 - [ ] **Lesson 10:** 불꽃 감지 (Flame Detection)
 - [ ] **Lesson 11:** 소리 센서 (Sound Sensor)
