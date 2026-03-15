@@ -13,13 +13,16 @@
 #include "SoftwareSerial.h"
 SoftwareSerial softserial(A9, A8); // A9 to ESP_TX, A8 to ESP_RX by default
 //#endif
-#define redLED 11
+#define redLED 13
 #define greenLED 12
 #define gasSensor 3
 int gasStatus=0;
 String gasStr;
-const char *ssid = "****";        // change **** to your wifi said
-const char *pass = "****";    // change **** to your wifi password
+
+#include <arduino_secrets.h>
+
+char ssid[] = SECRET_SSID;
+char pass[] = SECRET_PASS;
 int status = WL_IDLE_STATUS;
 
 int ledStatus = LOW;
@@ -68,8 +71,10 @@ void loop()
 {
 
 
-  gasStatus=digitalRead(gasSensor);
-  if (gasStatus==1) {
+  gasStatus=analogRead(gasSensor);
+  Serial.print("gasStatus: ");
+  Serial.println(gasStatus); 
+  if (gasStatus<50) {
     digitalWrite(redLED,LOW);
     digitalWrite(greenLED,HIGH);   
     gasStr="<font color=GREEN><b>Safe</b></font>";
