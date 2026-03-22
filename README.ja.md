@@ -50,7 +50,7 @@ osoyoo-smart-home-iot/
 - [x] **Lesson 7:** DHT11温湿度センサー (DHT11 Sensor)
 - [x] **Lesson 8:** ドアの開閉制御 (Switching Door)
 - [x] **Lesson 9:** ガス検知 (Gas Detection)
-- [ ] **Lesson 10:** 炎検知 (Flame Detection)
+- [x] **Lesson 10:** 炎検知 (Flame Detection)
 - [ ] **Lesson 11:** サウンドセンサー (Sound Sensor)
 - [ ] **Lesson 12:** 光センサー (Light Sensor)
 - [ ] **Lesson 13:** PIR動体検知 (PIR Motion Detection)
