@@ -13,14 +13,15 @@
 #include "SoftwareSerial.h"
 SoftwareSerial softserial(A9, A8); // A9 to ESP_TX, A8 to ESP_RX by default
 //#endif
-#define redLED 11
+#define redLED 13
 #define greenLED 12
 #define sound_sensor A2
 #define buzzer 5
 int SoundStatus=0;
 String StatusStr;
-char ssid[] = "******"; // replace ****** with your network SSID (name)
-char pass[] = "******"; // replace ****** with your network password
+#include <arduino_secrets.h>
+char ssid[] = SECRET_SSID;
+char pass[] = SECRET_PASS;
 int status = WL_IDLE_STATUS;
 
 

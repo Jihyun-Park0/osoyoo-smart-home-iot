@@ -52,7 +52,7 @@ Follow the official [OSOYOO Tutorial Lessons](https://osoyoo.com/2019/10/18/osoy
 - [x] **Lesson 8:** Switching Door
 - [x] **Lesson 9:** Gas Detection
 - [x] **Lesson 10:** Flame Detection
-- [ ] **Lesson 11:** Sound Sensor
+- [x] **Lesson 11:** Sound Sensor
 - [ ] **Lesson 12:** Light Sensor
 - [ ] **Lesson 13:** PIR Motion Detection
 - [ ] **Lesson 14:** LCD Screen
