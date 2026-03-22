@@ -13,14 +13,16 @@
 #include "SoftwareSerial.h"
 SoftwareSerial softserial(A9, A8); // A9 to ESP_TX, A8 to ESP_RX by default
 //#endif
-#define redLED 11
+#define redLED 13
 #define greenLED 12
 #define buzzer 5
 #define flame_sensor A1
 int flame_status=0;
 String gasStr;
-char ssid[] = "******"; // replace ****** with your network SSID (name)
-char pass[] = "******"; // replace ****** with your network password
+#include <arduino_secrets.h>
+
+char ssid[] = SECRET_SSID;
+char pass[] = SECRET_PASS;
 int status = WL_IDLE_STATUS;
 
 int ledStatus = LOW;
