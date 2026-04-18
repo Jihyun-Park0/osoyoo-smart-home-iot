@@ -13,14 +13,15 @@
 #include "SoftwareSerial.h"
 SoftwareSerial softserial(A9, A8); // A9 to ESP_TX, A8 to ESP_RX by default
 //#endif
-#define redLED 11
+#define redLED 13
 #define greenLED 12
 #define buzzer 5
-#define light_sensor A0
+#define light_sensor A1
 int lightStatus=0;
 String lightStr;
-char ssid[] = "******"; // replace ****** with your network SSID (name)
-char pass[] = "******"; // replace ****** with your network password
+#include <arduino_secrets.h>
+char ssid[] = SECRET_SSID;
+char pass[] = SECRET_PASS;
 int status = WL_IDLE_STATUS;
 
 int ledStatus = LOW;
@@ -70,21 +71,23 @@ void loop()
 
 
   lightStatus=digitalRead(light_sensor);
-
+  int val=analogRead(light_sensor);
+  Serial.println(val);
   if (lightStatus==1) {
     digitalWrite(redLED,LOW);
     digitalWrite(greenLED,HIGH);   
-     digitalWrite(buzzer,LOW);
+    //  digitalWrite(buzzer,LOW);
     Serial.println("No light");
     lightStr="<font color=GREEN><b>No Light!</b></font>";
   } else
   {
- Serial.println("sound detected");
+ Serial.println("Light detected");
     digitalWrite(redLED,HIGH);
     digitalWrite(greenLED,LOW);   
-     digitalWrite(buzzer,HIGH);
+    //  digitalWrite(buzzer,HIGH);
         lightStr="<font color=RED><b>Light Detected!</b></font>";
   }
+  
   WiFiEspClient client = server.available();  // listen for incoming clients
 
   if (client) {                               // if you get a client,
