@@ -53,7 +53,7 @@ osoyoo-smart-home-iot/
 - [x] **Lesson 10:** 炎検知 (Flame Detection)
 - [x] **Lesson 11:** サウンドセンサー (Sound Sensor)
 - [x] **Lesson 12:** 光センサー (Light Sensor)
-- [ ] **Lesson 13:** PIR動体検知 (PIR Motion Detection)
+- [x] **Lesson 13:** PIR動体検知 (PIR Motion Detection)
 - [ ] **Lesson 14:** LCDスクリーン (LCD Screen)
 - [ ] **Lesson 15:** 1チャンネルリレー (1-Channel Relay)
 - [ ] **Lesson 16:** RFIDドア開閉システム (RFID Switching Door)
