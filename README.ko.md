@@ -53,7 +53,7 @@ osoyoo-smart-home-iot/
 - [x] **Lesson 9:** 가스 감지 (Gas Detection)
 - [x] **Lesson 10:** 불꽃 감지 (Flame Detection)
 - [x] **Lesson 11:** 소리 센서 (Sound Sensor)
-- [ ] **Lesson 12:** 조도 센서 (Light Sensor)
+- [x] **Lesson 12:** 조도 센서 (Light Sensor)
 - [ ] **Lesson 13:** PIR 인체 감지 (PIR Motion Detection)
 - [ ] **Lesson 14:** LCD 스크린 (LCD Screen)
 - [ ] **Lesson 15:** 1채널 릴레이 (1-Channel Relay)
