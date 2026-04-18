@@ -13,14 +13,15 @@
 #include "SoftwareSerial.h"
 SoftwareSerial softserial(A9, A8); // A9 to ESP_TX, A8 to ESP_RX by default
 //#endif
-#define redLED 11
+#define redLED 13
 #define greenLED 12
-#define buzzer 5
+// #define buzzer 5
 #define motion_sensor 4
 int gasStatus=0;
 String gasStr;
-char ssid[] = "******"; // replace ****** with your network SSID (name)
-char pass[] = "******"; // replace ****** with your network password
+#include <arduino_secrets.h>
+char ssid[] = SECRET_SSID;
+char pass[] = SECRET_PASS;
 int status = WL_IDLE_STATUS;
 
 int ledStatus = LOW;
@@ -30,7 +31,8 @@ WiFiEspServer server(80);
 RingBuffer buf(8);
 
 void setup()
-{ pinMode(buzzer, OUTPUT);	// initialize digital pin Red LED as an output.
+{ 
+  // pinMode(buzzer, OUTPUT);	// initialize digital pin Red LED as an output.
   pinMode(redLED, OUTPUT);	// initialize digital pin Red LED as an output.
   pinMode(greenLED, OUTPUT);  // initialize digital pin Red LED as an output.
   pinMode(motion_sensor, INPUT);  // initialize gas sensor pin input.
@@ -74,7 +76,7 @@ void loop()
   if (gasStatus==0) {
     digitalWrite(redLED,LOW);
     digitalWrite(greenLED,HIGH);   
-     digitalWrite(buzzer,LOW);
+    //  digitalWrite(buzzer,LOW);
     Serial.println("No Intruder");
     gasStr="<font color=GREEN><b>No Intruder!</b></font>";
   } else
@@ -82,7 +84,7 @@ void loop()
  Serial.println("Intruder detected");
     digitalWrite(redLED,HIGH);
     digitalWrite(greenLED,LOW);   
-     digitalWrite(buzzer,HIGH);
+    //  digitalWrite(buzzer,HIGH);
         gasStr="<font color=RED><b>Intruder Detected!</b></font>";
   }
   WiFiEspClient client = server.available();  // listen for incoming clients
