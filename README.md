@@ -55,7 +55,7 @@ Follow the official [OSOYOO Tutorial Lessons](https://osoyoo.com/2019/10/18/osoy
 - [x] **Lesson 11:** Sound Sensor
 - [x] **Lesson 12:** Light Sensor
 - [x] **Lesson 13:** PIR Motion Detection
-- [ ] **Lesson 14:** LCD Screen
+- [x] **Lesson 14:** LCD Screen
 - [ ] **Lesson 15:** 1-Channel Relay
 - [ ] **Lesson 16:** RFID Switching Door
 - [ ] **Lesson 17:** Tracing Human Movement

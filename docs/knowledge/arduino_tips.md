@@ -74,3 +74,50 @@ IoT Shield上の3ピンラベルは以下の通りであり、VCC-GND-S規格と
 - **SIG (Signal):** 部品からの信号出力や、部品への制御信号入力に使用されるピン。
 
 > **注意:** 接続前に必ず部品の動作電圧（3.3Vまたは5V）を確認すること。
+
+
+## 5. I2Cデバイス（LCD等）のトラブルシューティングとスキャナー
+
+I2C接続のLCD画面に何も表示されない、または「No I2C devices found」となる場合は、以下のステップで検証・解決する。
+
+### I2C Scannerによるアドレスの特定と生存確認
+
+デバイスが正しく接続されているか、またどのアドレスで認識されているかを以下のスキャナーコードで確認する。
+一般的なLCDは `0x27` や `0x3F` を使用する。もし `0x58` などの異なるアドレスが検出された場合は、他のセンサー（ガスセンサー等）が応答している可能性を疑い、LCD単体で再度テストする。
+
+```cpp
+#include <Wire.h>
+
+void setup() {
+  Wire.begin();
+  Serial.begin(9600);
+  Serial.println("\nI2C Scanner");
+}
+
+void loop() {
+  byte error, address;
+  int nDevices = 0;
+
+  Serial.println("Scanning...");
+
+  for(address = 1; address < 127; address++ ) {
+    Wire.beginTransmission(address);
+    error = Wire.endTransmission();
+
+    if (error == 0) {
+      Serial.print("I2C device found at address 0x");
+      if (address < 16) Serial.print("0");
+      Serial.print(address, HEX);
+      Serial.println("  !");
+      nDevices++;
+    } else if (error == 4) {
+      Serial.print("Unknown error at address 0x");
+      if (address < 16) Serial.print("0");
+      Serial.println(address, HEX);
+    }    
+  }
+  if (nDevices == 0) Serial.println("No I2C devices found\n");
+  else Serial.println("done\n");
+
+  delay(5000); // 5秒ごとに再スキャン
+}
