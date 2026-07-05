@@ -16,8 +16,9 @@
 SoftwareSerial softserial(A9, A8); // A9 to ESP_TX, A8 to ESP_RX by default
 //#endif
 boolean flag=false;
-char ssid[] = "******"; // replace ****** with your network SSID (name)
-char pass[] = "******"; // replace ****** with your network password
+#include <arduino_secrets.h>
+char ssid[] = SECRET_SSID;
+char pass[] = SECRET_PASS;
 int status = WL_IDLE_STATUS;
  
 WiFiEspServer server(80);
@@ -77,7 +78,10 @@ void loop()
           row=0;
         }
         if (flag) 
-        {  lcd.setCursor(row, 1);
+        {  
+          Serial.print("Detected char: ");
+          Serial.println(c);
+          lcd.setCursor(row, 1);
        
             lcd.print(c);
             row++;
@@ -124,7 +128,7 @@ void sendHttpResponse(WiFiEspClient client)
   client.println();
   
   // the content of the HTTP response follows the header:
-  client.print("<FORM method==\"GET\" action=\"#\" >your  name?<input type=text name=usr><input type=submit name=Submit></form>");
+  client.print("<FORM method=\"GET\" action=\"#\" >your  name?<input type=text name=usr><input type=submit name=Submit></form>");
   client.println();
 }
 
