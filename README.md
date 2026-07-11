@@ -57,7 +57,7 @@ Follow the official [OSOYOO Tutorial Lessons](https://osoyoo.com/2019/10/18/osoy
 - [x] **Lesson 13:** PIR Motion Detection
 - [x] **Lesson 14:** LCD Screen
 - [x] **Lesson 15:** 1-Channel Relay
-- [ ] **Lesson 16:** RFID Switching Door
+- [x] **Lesson 16:** RFID Switching Door
 - [ ] **Lesson 17:** Tracing Human Movement
 - [ ] **Lesson 18:** Two Mega-IoT Devices
 - [ ] **Lesson 19:** IoT Capstone Project

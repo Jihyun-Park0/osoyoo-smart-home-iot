@@ -1,4 +1,4 @@
-/*  ___   ___  ___  _   _  ___   ___   ____ ___  ____  
+/*  ___   ___  ___  _   _  ___   ___   ____ ___  ____
  * / _ \ /___)/ _ \| | | |/ _ \ / _ \ / ___) _ \|    \ 
  *| |_| |___ | |_| | |_| | |_| | |_| ( (__| |_| | | | |
  * \___/(___/ \___/ \__  |\___/ \___(_)____)___/|_|_|_|
@@ -16,7 +16,8 @@ Servo head;
 
 #include <SPI.h>
 #include <RFID.h>
-unsigned char my_rfid[] = {186,11,86,89,190}; // read http://osoyoo.com/?p=28943 to get your RFID value and replace this line
+#include <arduino_secrets.h>
+unsigned char my_rfid[] = SECRET_CARD_RFID_UID; // read http://osoyoo.com/?p=28943 to get your RFID value and replace this line
 RFID rfid(48,49);   //D48--RFID module SDA pin、D49 RFID module RST pin
 
 #include "WiFiEsp.h"
@@ -25,8 +26,8 @@ RFID rfid(48,49);   //D48--RFID module SDA pin、D49 RFID module RST pin
 SoftwareSerial softserial(A9, A8); // A9 to ESP_TX, A8 to ESP_RX by default
 //#endif
 
-char ssid[] = "****"; // replace ****** with your network SSID (name)
-char pass[] = "****"; // replace ****** with your network password
+char ssid[] = SECRET_SSID;
+char pass[] = SECRET_PASS;
 int status = WL_IDLE_STATUS;
 
 int DoorStatus = LOW;
@@ -84,7 +85,7 @@ void loop()
     Serial.println("Find the card!");
    //read serial number
     if (rfid.readCardSerial()) {
-
+      Serial.println(rfid.serNum[0]);
       if (compare_rfid(rfid.serNum,my_rfid))
       {
       Serial.println("match");
