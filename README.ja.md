@@ -55,7 +55,7 @@ osoyoo-smart-home-iot/
 - [x] **Lesson 12:** 光センサー (Light Sensor)
 - [x] **Lesson 13:** PIR動体検知 (PIR Motion Detection)
 - [x] **Lesson 14:** LCDスクリーン (LCD Screen)
-- [ ] **Lesson 15:** 1チャンネルリレー (1-Channel Relay)
+- [x] **Lesson 15:** 1チャンネルリレー (1-Channel Relay)
 - [ ] **Lesson 16:** RFIDドア開閉システム (RFID Switching Door)
 - [ ] **Lesson 17:** 人間の動きの追跡 (Tracing Human Movement)
 - [ ] **Lesson 18:** 2台のMega-IoTデバイス連携 (Two Mega-IoT Devices)

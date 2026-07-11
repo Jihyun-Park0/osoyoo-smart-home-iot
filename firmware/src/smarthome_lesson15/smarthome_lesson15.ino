@@ -15,11 +15,12 @@ SoftwareSerial softserial(A9, A8); // A9 to ESP_TX, A8 to ESP_RX by default
 //#endif
 #define RELAY_PIN 6
 
-char ssid[] = "******"; // replace ****** with your network SSID (name)
-char pass[] = "******"; // replace ****** with your network password
+#include <arduino_secrets.h>
+char ssid[] = SECRET_SSID;
+char pass[] = SECRET_PASS;
 int status = WL_IDLE_STATUS;
 
-int ledStatus = LOW;
+int relayStatus = LOW;
 
 WiFiEspServer server(80);
 
@@ -85,13 +86,13 @@ void loop()
         // Check to see if the client request was "GET /H" or "GET /L":
         if (buf.endsWith("GET /H")) {
           Serial.println("Turn RELAY ON");
-          ledStatus = HIGH;
-          digitalWrite(RELAY_PIN, HIGH);   // turn the LED on (HIGH is the voltage level)
+          relayStatus = HIGH;
+          digitalWrite(RELAY_PIN, HIGH);   // turn the Relay on (HIGH is the voltage level)
         }
         else if (buf.endsWith("GET /L")) {
           Serial.println("Turn RELAY OFF");
-          ledStatus = LOW;
-          digitalWrite(RELAY_PIN, LOW);    // turn the LED off by making the voltage LOW
+          relayStatus = LOW;
+          digitalWrite(RELAY_PIN, LOW);    // turn the Relay off by making the voltage LOW
         }
       }
     }
@@ -113,7 +114,7 @@ void sendHttpResponse(WiFiEspClient client)
   
   // the content of the HTTP response follows the header:
   client.print("RELAY ");
-  if (ledStatus==HIGH) 
+  if (relayStatus==HIGH) 
     client.print("ON");
   else client.print("OFF");
   client.println("<p>");
