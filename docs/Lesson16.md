@@ -68,5 +68,5 @@ IDが記録と一致しない場合、サーボは動かず、代わりにブザ
 
 |            |                            Web                            |                    Smart Home                     |
 |------------|:---------------------------------------------------------:|:-------------------------------------------------:|
-| Door Open  |  ![web_door_open.png](assets/lesson16/web_door_open.png)  | ![door_close.mp4](assets/lesson16/door_close.mp4) |
-| Door Close | ![web_door_close.png](assets/lesson16/web_door_close.png) |  ![door_open.mp4](assets/lesson16/door_open.mp4)  |
+| Door Open  |  ![web_door_open.png](assets/lesson16/web_door_open.png)  |  ![door_open.mp4](assets/lesson16/door_open.mp4)  |
+| Door Close | ![web_door_close.png](assets/lesson16/web_door_close.png) | ![door_close.mp4](assets/lesson16/door_close.mp4) |
