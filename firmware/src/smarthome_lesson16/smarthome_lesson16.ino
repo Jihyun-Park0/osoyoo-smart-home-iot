@@ -1,10 +1,4 @@
-#include <arduino_secrets.h>
-#include <arduino_secrets_sample.h>
-
-#include <arduino_secrets.h>
-#include <arduino_secrets_sample.h>
-
-/*  ___   ___  ___  _   _  ___   ___   ____ ___  ____  
+/*  ___   ___  ___  _   _  ___   ___   ____ ___  ____
  * / _ \ /___)/ _ \| | | |/ _ \ / _ \ / ___) _ \|    \ 
  *| |_| |___ | |_| | |_| | |_| | |_| ( (__| |_| | | | |
  * \___/(___/ \___/ \__  |\___/ \___(_)____)___/|_|_|_|
