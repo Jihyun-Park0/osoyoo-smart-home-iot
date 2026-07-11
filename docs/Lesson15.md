@@ -1,4 +1,4 @@
-## Lesson 14: LCDスクリーン (LCD Screen)
+## Lesson 15: 1チャンネルリレー (1-Channel Relay)
 
 ### 1. 目的 (Objective)
 
