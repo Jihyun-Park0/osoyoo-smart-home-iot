@@ -59,5 +59,5 @@ Follow the official [OSOYOO Tutorial Lessons](https://osoyoo.com/2019/10/18/osoy
 - [x] **Lesson 15:** 1-Channel Relay
 - [x] **Lesson 16:** RFID Switching Door
 - [x] **Lesson 17:** Tracing Human Movement
-- [ ] **Lesson 18:** Two Mega-IoT Devices
+- [x] **Lesson 18:** Two Mega-IoT Devices
 - [ ] **Lesson 19:** IoT Capstone Project

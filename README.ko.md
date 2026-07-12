@@ -59,5 +59,5 @@ osoyoo-smart-home-iot/
 - [x] **Lesson 15:** 1채널 릴레이 (1-Channel Relay)
 - [x] **Lesson 16:** RFID 문 개폐 시스템 (RFID Switching Door)
 - [x] **Lesson 17:** 인간 움직임 추적 (Tracing Human Movement)
-- [ ] **Lesson 18:** 두 대의 Mega-IoT 장치 연동 (Two Mega-IoT Devices)
+- [x] **Lesson 18:** 두 대의 Mega-IoT 장치 연동 (Two Mega-IoT Devices)
 - [ ] **Lesson 19:** IoT 캡스톤 프로젝트 (IoT Capstone Project)
