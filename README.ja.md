@@ -59,4 +59,4 @@ osoyoo-smart-home-iot/
 - [x] **Lesson 16:** RFIDドア開閉システム (RFID Switching Door)
 - [x] **Lesson 17:** 人間の動きの追跡 (Tracing Human Movement)
 - [x] **Lesson 18:** 2台のMega-IoTデバイス連携 (Two Mega-IoT Devices)
-- [ ] **Lesson 19:** IoTキャップストーンプロジェクト (IoT Capstone Project)
+- [x] **Lesson 19:** IoTキャップストーンプロジェクト (IoT Capstone Project)

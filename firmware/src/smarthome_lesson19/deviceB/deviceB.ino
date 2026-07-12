@@ -19,11 +19,12 @@ SoftwareSerial softserial(A9, A8); // A9 to ESP_TX, A8 to ESP_RX by default
   StaticJsonDocument<200> doc;
 #define LED_PIN 11
 #define BUZZER 5 
-char ssid[] = "*****";            // your network SSID (name)
-char pass[] = "*****";        // your network password
+#include <arduino_secrets.h>
+char ssid[] = SECRET_SSID;
+char pass[] = SECRET_PASS;
 int status = WL_IDLE_STATUS;     // the Wifi radio's status
 
-char remote_server[] = "192.168.50.27";  // remote device IP
+char remote_server[] = "192.168.xxx.xxx";  // remote device IP
 unsigned int local_port = 2390;        // local port to listen for UDP packets
 unsigned int remote_port = 2390;        // remote port to listen for UDP packets
 
