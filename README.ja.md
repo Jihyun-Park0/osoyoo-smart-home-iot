@@ -57,6 +57,6 @@ osoyoo-smart-home-iot/
 - [x] **Lesson 14:** LCDスクリーン (LCD Screen)
 - [x] **Lesson 15:** 1チャンネルリレー (1-Channel Relay)
 - [x] **Lesson 16:** RFIDドア開閉システム (RFID Switching Door)
-- [ ] **Lesson 17:** 人間の動きの追跡 (Tracing Human Movement)
+- [x] **Lesson 17:** 人間の動きの追跡 (Tracing Human Movement)
 - [ ] **Lesson 18:** 2台のMega-IoTデバイス連携 (Two Mega-IoT Devices)
 - [ ] **Lesson 19:** IoTキャップストーンプロジェクト (IoT Capstone Project)
