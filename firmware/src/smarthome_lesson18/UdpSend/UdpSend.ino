@@ -13,11 +13,12 @@
 #include "SoftwareSerial.h"
 SoftwareSerial softserial(A9, A8); // A9 to ESP_TX, A8 to ESP_RX by default
 
-char ssid[] = "*****";            // your network SSID (name)
-char pass[] = "*****";        // your network password
+#include <arduino_secrets.h>
+char ssid[] = SECRET_SSID;
+char pass[] = SECRET_PASS;
 int status = WL_IDLE_STATUS;     // the Wifi radio's status
 
-char remote_server[] = "192.168.50.102";  // remote device IP
+char remote_server[] = "192.168.xxx.xxx";  // remote device IP
 unsigned int local_port = 2390;        // local port to listen for UDP packets
 unsigned int remote_port = 2390;        // remote port to listen for UDP packets
 

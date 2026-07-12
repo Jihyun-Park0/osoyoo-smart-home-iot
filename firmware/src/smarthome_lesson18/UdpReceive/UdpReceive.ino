@@ -15,9 +15,9 @@
 #include "SoftwareSerial.h"
 SoftwareSerial softserial(4, 5); // A9 to ESP_TX, A8 to ESP_RX by default
 
-
-char ssid[] = "*****";            // your network SSID (name)
-char pass[] = "*****";        // your network password
+#include <arduino_secrets.h>
+char ssid[] = SECRET_SSID;
+char pass[] = SECRET_PASS;
 int status = WL_IDLE_STATUS;     // the Wifi radio's status
 
 unsigned int localPort = 2390;  // local port to listen on
