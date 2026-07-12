@@ -20,8 +20,9 @@ SoftwareSerial softserial(A9, A8); // A9 to ESP_TX, A8 to ESP_RX by default
 #define Trig_PIN 25
 #define Echo_PIN 26
 
-char ssid[] = "TP-LINK_DAFD"; // replace ****** with your network SSID (name)
-char pass[] = "wjwyrsgj4903"; // replace ****** with your network password
+#include <arduino_secrets.h>
+char ssid[] = SECRET_SSID;
+char pass[] = SECRET_PASS;
 int status = WL_IDLE_STATUS;
 
 int distance = 0;
@@ -85,7 +86,7 @@ void loop()
     status_str="<font color=000000><b>No object in range</b></font>";
   } else  if (distance>20)
   {
-//    Serial.println("Intruder detected");
+   Serial.println("Object is Very Far");
     digitalWrite(whiteLED,LOW);  
     digitalWrite(yellowLED,LOW); 
     digitalWrite(redLED,HIGH); 	
@@ -94,7 +95,7 @@ void loop()
   }
   else  if (distance>10)
   {
-  //  Serial.println("Object is far!");
+   Serial.println("Object is far!");
     digitalWrite(whiteLED,LOW);  
     digitalWrite(yellowLED,LOW); 
     digitalWrite(redLED,LOW);   
@@ -102,7 +103,7 @@ void loop()
     status_str="<font color=green><b>Object is far</b></font>";
   }   else  if (distance>5)
   {
-  //  Serial.println("Object is close!");
+   Serial.println("Object is close!");
     digitalWrite(whiteLED,LOW);  
     digitalWrite(yellowLED,HIGH); 
     digitalWrite(redLED,LOW);   
@@ -110,12 +111,12 @@ void loop()
     status_str="<font color=yellow><b>Object is  close</b></font>";
   } else 
    {
-//    Serial.println("Object is very close!");
+   Serial.println("Object is very close!");
     digitalWrite(whiteLED,HIGH);  
     digitalWrite(yellowLED,LOW); 
     digitalWrite(redLED,LOW);   
     digitalWrite(greenLED,LOW);   
-    status_str="<font color=ffffff><b>Object is Very Close!</b></font>";
+    status_str="<font color=c1c1c1><b>Object is Very Close!</b></font>";
   }
   WiFiEspClient client = server.available();  // listen for incoming clients
 
@@ -161,7 +162,7 @@ void sendHttpResponse(WiFiEspClient client)
   client.println();
   
   // the content of the HTTP response follows the header:
-  client.print("<meta http-equiv=\"refresh\" content=\"5\"/>Status: ");
+  client.print("<meta http-equiv=\"refresh\" content=\"2\"/>Status: ");
     client.print(status_str);
 
 }
