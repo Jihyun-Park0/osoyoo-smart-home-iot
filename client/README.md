@@ -1,46 +1,62 @@
-This is a Kotlin Multiplatform project targeting Android, iOS, Web, Desktop (JVM).
+# OSOYOO Smart Home Dashboard 📱💻🌐
 
-* [/iosApp](./iosApp/iosApp) contains an iOS application. Even if you’re sharing your UI with Compose Multiplatform,
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+[![Language: EN](https://img.shields.io/badge/Language-English-red.svg)](./README.md)
+[![Language: KO](https://img.shields.io/badge/Language-한국어-lightgrey.svg)](./README.ko.md)
+[![Language: JA](https://img.shields.io/badge/Language-日本語-lightgrey.svg)](./README.ja.md)
 
-* [/shared](./shared/src) is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - [commonMain](./shared/src/commonMain/kotlin) is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    the [iosMain](./shared/src/iosMain/kotlin) folder would be the right place for such calls.
-    Similarly, if you want to edit the Desktop (JVM) specific part, the [jvmMain](./shared/src/jvmMain/kotlin)
-    folder is the appropriate location.
+A cross-platform client for monitoring and controlling the OSOYOO Smart Home IoT system, built with **Compose Multiplatform**.
 
-### Running the apps
+## 🌟 Features
 
-Use the run configurations provided by the run widget in your IDE's toolbar. You can also use these commands and options:
+- **Cross-Platform:** Single codebase targeting Android, Desktop (JVM), and Web (Wasm).
+- **Responsive Design:** Adaptive UI that works seamlessly across different screen sizes.
 
-- Android app: `./gradlew :androidApp:assembleDebug`
-- Desktop app:
-  - Hot reload: `./gradlew :desktopApp:hotRun --auto`
-  - Standard run: `./gradlew :desktopApp:run`
-- Web app:
-  - Wasm target (faster, modern browsers): `./gradlew :webApp:wasmJsBrowserDevelopmentRun`
-  - JS target (slower, supports older browsers): `./gradlew :webApp:jsBrowserDevelopmentRun`
-- iOS app: open the [/iosApp](./iosApp) directory in Xcode and run it from there.
+## 📱 Platform Support
 
-### Running tests
+| Platform | Support Version |
+| :--- | :--- |
+| **Android** | API 24+ (Android 7.0+) |
+| **iOS** | iOS 18.2+ |
+| **Desktop** | Windows, macOS, Linux (JVM 17+) |
+| **Web** | Chrome, Firefox, Safari (Wasm/JS) |
 
-Use the run button in your IDE's editor gutter, or run tests using Gradle tasks:
+## 🛠️ Project Structure
 
-- Android tests: `./gradlew :shared:testAndroidHostTest`
-- Desktop tests: `./gradlew :shared:jvmTest`
-- Web tests:
-  - Wasm target: `./gradlew :shared:wasmJsTest`
-  - JS target: `./gradlew :shared:jsTest`
-- iOS tests: `./gradlew :shared:iosSimulatorArm64Test`
+This is a Kotlin Multiplatform project organized as follows:
+
+- **[:shared](./shared/src):** Core business logic, networking, and shared Compose UI components.
+  - `commonMain`: Shared logic and UI.
+  - `androidMain` / `jvmMain` / `wasmJsMain`: Platform-specific implementations.
+- **[:androidApp](./androidApp):** Entry point for the Android application.
+- **[:iosApp](./iosApp):** Entry point for the iOS application (SwiftUI).
+- **[:desktopApp](./desktopApp):** Entry point for the Desktop (JVM) application.
+- **[:webApp](./webApp):** Entry point for the Web (Wasm) application.
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- **Android Studio** (Koala or newer recommended)
+- **Xcode 16.2+** (for iOS 18.2 support)
+- **JDK 17** or higher
+
+### Running the Applications
+
+Use the **Kotlin Multiplatform** plugin in Android Studio (Run Configurations) or the following Gradle commands:
+
+- **Android:** `./gradlew :androidApp:assembleDebug`
+- **iOS:** Open `client/iosApp/iosApp.xcodeproj` in Xcode or run via the IDE.
+- **Desktop:** `./gradlew :desktopApp:run`
+- **Web (JS):** `./gradlew :webApp:jsBrowserDevelopmentRun`
+- **Web (Wasm):** `./gradlew :webApp:wasmJsBrowserDevelopmentRun`
+
+## 🧪 Testing
+
+- **All Platforms:** `./gradlew :shared:allTests`
+- **Android:** `./gradlew :shared:testAndroidHostTest`
+- **iOS:** `./gradlew :shared:iosSimulatorArm64Test`
+- **Desktop:** `./gradlew :shared:jvmTest`
+- **Web (JS):** `./gradlew :shared:jsBrowserTest`
+- **Web (Wasm):** `./gradlew :shared:wasmJsBrowserTest`
 
 ---
-
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html),
-[Compose Multiplatform](https://github.com/JetBrains/compose-multiplatform/#compose-multiplatform),
-[Kotlin/Wasm](https://kotl.in/wasm/)…
-
-We would appreciate your feedback on Compose/Web and Kotlin/Wasm in the public Slack channel [#compose-web](https://slack-chats.kotlinlang.org/c/compose-web).
-If you face any issues, please report them on [YouTrack](https://youtrack.jetbrains.com/newIssue?project=CMP).

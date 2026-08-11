@@ -6,18 +6,20 @@
 
 ## 📌 프로젝트 개요
 
-이 프로젝트는 [OSOYOO 스마트 홈 IoT 학습 키트](https://osoyoo.com/2019/10/18/osoyoo-smart-home-iot-learning-kit-with-mega2560-introduction/)를 활용하여 IoT 시스템 전반을 마스터하는 과정을 기록합니다. 단순한 코드 복사를 넘어, 센서 메커니즘의 이해부터 스마트 홈 자동화 구현까지의 깊이 있는 학습을 목표로 합니다.
+이 프로젝트는 [OSOYOO 스마트 홈 IoT 키트](https://osoyoo.com/2019/10/18/osoyoo-smart-home-iot-learning-kit-with-mega2560-introduction/)를 중심으로 한 통합 **스마트 홈 생태계**입니다. 멀티플랫폼 대시보드를 통해 하드웨어 센서와 액추에이터를 실시간으로 모니터링하고 제어합니다.
 
-## 🚀 주요 학습 목표
+## 🚀 주요 목표
 
-- **IoT 핵심 기술 습득:** 다양한 센서의 데이터 수집 원리와 액추에이터 제어 로직을 심도 있게 학습합니다.
-- **스마트 홈 자동화 구현:** 화재 감지, 보안 알람, 환경 제어 등 실제 생활에 적용 가능한 자동화 시나리오를 구축합니다.
-- **엔지니어링 역량 강화:** 하드웨어 스케치를 모듈화된 소프트웨어 구조로 고도화하고 체계적인 기술 문서화를 실천합니다.
+- **멀티플랫폼 통합 제어:** Compose Multiplatform을 활용한 Android, iOS, Desktop, Web 통합 대시보드 구축.
+- **하드웨어-소프트웨어 시너지:** 아두이노 기반 펌웨어와 현대적인 클라이언트 앱 간의 매끄러운 연동.
+- **엔지니어링 역량 강화:** C++와 Kotlin 코드베이스 전반에 걸친 클린, 모듈화 아키텍처 지향.
 
 ## 🛠️ 기술 스택
 
 - **하드웨어:** Arduino Mega 2560, OSOYOO Smart Home Kit
-- **언어:** C++ (Arduino Sketch)
+- **펌웨어:** C++ (Arduino Sketch)
+- **클라이언트 (대시보드):** Kotlin Multiplatform (Compose Multiplatform)
+    - **플랫폼:** Android, iOS, Desktop (JVM), Web (Wasm)
 - **버전 관리:** Git / GitHub (Gitmoji 컨벤션 준수)
 
 ## 📂 폴더 구조
@@ -26,38 +28,25 @@
 osoyoo-smart-home-iot/
 ├── firmware/          # [Embedded] 아두이노 소스 및 라이브러리
 │   ├── sample/        # Lesson별 예제 코드 (.ino)
-│   └── src/           # 실습 및 리팩토링 코드
+│   ├── src/           # 실습 및 리팩토링 코드
 │   └── library/       # 프로젝트 필수 라이브러리
+├── client/            # [Mobile/Desktop/Web] Compose Multiplatform 대시보드
+│   ├── androidApp/    # Android 앱 구현
+│   ├── iosApp/        # iOS 앱 구현
+│   ├── desktopApp/    # Desktop (JVM) 앱 구현
+│   ├── webApp/        # Web (Wasm) 앱 구현
+│   └── shared/        # 공통 비즈니스 로직 및 UI 컴포넌트
 └── docs/              # 회로도, 센서 사양서 및 실제 동작 증거 자료.
 ```
 
-## 📖 로드맵
+> [!TIP]
+> 대시보드 애플리케이션에 대한 자세한 내용은 **[클라이언트 README](./client/README.ko.md)**를 참조하세요.
 
-[OSOYOO 공식 튜토리얼](https://osoyoo.com/2019/10/18/osoyoo-smart-home-iot-learning-kit-with-mega2560-introduction/)의 과정을 따라 IoT 시스템을 단계별로 학습합니다:
+## 📖 로드맵 및 진행 상황
 
-1. **[Step 1] 기초 및 조립:** IoT 개념 이해 및 하드웨어 모델 조립 (Lesson 1-2)
-2. **[Step 2] 기본 입출력 제어:** LED, 부저, 온습도 센서 등 기초 모듈 제어 (Lesson 3-7)
-3. **[Step 3] 고급 센서 및 장치 활용:** 서보 모터, 가스/불꽃/소리/광센서 및 LCD 출력 (Lesson 8-14)
-4. **[Step 4] 시스템 심화 및 통합:** 릴레이 제어, RFID 보안 및 최종 통합 프로젝트 완성 (Lesson 15-19)
+초기 IoT 학습 단계가 완료되었습니다. 상세한 커리큘럼 로드맵과 레슨별 진행 상황은 다음 문서를 참조하세요:
+👉 **[IoT 학습 여정 커리큘럼 (CURRICULUM.ko.md)](./docs/CURRICULUM.ko.md)**
 
-### ✅ 레슨 체크리스트
-
-- [x] **Lesson 1:** 사물인터넷 (Internet of Things)
-- [x] **Lesson 2:** 모델 조립 (Model Installation)
-- [x] **Lesson 3:** 헬로 월드 (Hello World)
-- [x] **Lesson 4:** 원격 제어 LED (Remote Control LED)
-- [x] **Lesson 5:** RGB 모듈 (RGB Module)
-- [x] **Lesson 6:** 액티브 부저 (Active Buzzer)
-- [x] **Lesson 7:** DHT11 온습도 센서 (DHT11 Sensor)
-- [x] **Lesson 8:** 문 개폐 제어 (Switching Door)
-- [x] **Lesson 9:** 가스 감지 (Gas Detection)
-- [x] **Lesson 10:** 불꽃 감지 (Flame Detection)
-- [x] **Lesson 11:** 소리 센서 (Sound Sensor)
-- [x] **Lesson 12:** 조도 센서 (Light Sensor)
-- [x] **Lesson 13:** PIR 인체 감지 (PIR Motion Detection)
-- [x] **Lesson 14:** LCD 스크린 (LCD Screen)
-- [x] **Lesson 15:** 1채널 릴레이 (1-Channel Relay)
-- [x] **Lesson 16:** RFID 문 개폐 시스템 (RFID Switching Door)
-- [x] **Lesson 17:** 인간 움직임 추적 (Tracing Human Movement)
-- [x] **Lesson 18:** 두 대의 Mega-IoT 장치 연동 (Two Mega-IoT Devices)
-- [x] **Lesson 19:** IoT 캡스톤 프로젝트 (IoT Capstone Project)
+### 현재 집중 과제: Phase 2 - 스마트 홈 대시보드 🚀
+하드웨어와 연동되는 멀티플랫폼 클라이언트를 구축 중입니다. 개발 진행 상황은 GitHub Project에서 확인하실 수 있습니다:
+👉 **[스마트 홈 대시보드 프로젝트](https://github.com/users/Jihyun-Park0/projects/2)**
