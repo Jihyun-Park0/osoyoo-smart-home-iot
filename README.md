@@ -6,18 +6,20 @@
 
 ## 📌 Project Overview
 
-This project is dedicated to mastering IoT systems through the [OSOYOO Smart Home IoT Learning Kit](https://osoyoo.com/2019/10/18/osoyoo-smart-home-iot-learning-kit-with-mega2560-introduction/). It documents the entire journey from understanding basic sensor mechanisms to implementing complex smart home automation.
+This project is a comprehensive **Smart Home Ecosystem** centered around the [OSOYOO Smart Home IoT Kit](https://osoyoo.com/2019/10/18/osoyoo-smart-home-iot-learning-kit-with-mega2560-introduction/). It features a cross-platform dashboard that enables real-time monitoring and control of hardware sensors and actuators across multiple platforms.
 
 ## 🚀 Key Objectives
 
-- **Mastering IoT Fundamentals:** Comprehensive study of sensor data acquisition and actuator control logic.
-- **Smart Home Automation:** Implementing automated systems like fire detection, security alarms, and climate control.
-- **Engineering Excellence:** Focusing on clean, modular C++ code and structured technical documentation for hardware projects.
+- **Cross-Platform Control:** Unified dashboard for Android, iOS, Desktop, and Web using Compose Multiplatform.
+- **Hardware-Software Synergy:** Seamless integration between Arduino-based firmware and modern client applications.
+- **Engineering Excellence:** Focusing on clean, modular architecture across C++ and Kotlin codebases.
 
 ## 🛠️ Tech Stack
 
 - **Hardware:** Arduino Mega 2560, OSOYOO Smart Home Kit
-- **Language:** C++ (Arduino Sketch)
+- **Firmware:** C++ (Arduino Sketch)
+- **Client (Dashboard):** Kotlin Multiplatform (Compose Multiplatform)
+    - **Platforms:** Android, iOS, Desktop (JVM), Web (Wasm)
 - **VCS:** Git / GitHub (Gitmoji convention)
 
 ## 📂 Structure
@@ -26,38 +28,25 @@ This project is dedicated to mastering IoT systems through the [OSOYOO Smart Hom
 osoyoo-smart-home-iot/
 ├── firmware/          # [Embedded] Arduino source and libraries
 │   ├── sample/        # Sample code for each lesson (.ino)
-│   └── src/           # Practice and refactored code
+│   ├── src/           # Practice and refactored code
 │   └── library/       # Project required libraries
-└── docs/              # GCircuit diagrams, sensor specifications, and visual evidence of operation.
+├── client/            # [Mobile/Desktop/Web] Compose Multiplatform Dashboard
+│   ├── androidApp/    # Android specific implementation
+│   ├── iosApp/        # iOS specific implementation
+│   ├── desktopApp/    # Desktop (JVM) specific implementation
+│   ├── webApp/        # Web (Wasm) specific implementation
+│   └── shared/        # Shared business logic and UI components
+└── docs/              # GCircuit diagrams, sensor specifications, and visual evidence.
 ```
 
-## 📖 Roadmap
+> [!TIP]
+> For more details on the Dashboard application, check the **[Client README](./client/README.md)**.
 
-Follow the official [OSOYOO Tutorial Lessons](https://osoyoo.com/2019/10/18/osoyoo-smart-home-iot-learning-kit-with-mega2560-introduction/) to master IoT:
+## 📖 Roadmap & Progress
 
-1. **[Step 1] Basics & Assembly:** Understanding IoT and Model assembly (Lesson 1-2)
-2. **[Step 2] Basic I/O Control:** LEDs, Buzzers, and Temp/Humidity sensors (Lesson 3-7)
-3. **[Step 3] Advanced Modules:** Motors, Gas/Flame/Sound/Light sensors, and LCD (Lesson 8-14)
-4. **[Step 4] System Integration:** Relays, RFID Security, and Final Project (Lesson 15-19)
+The initial IoT learning phase is completed. For the detailed curriculum roadmap and lesson-by-lesson progress, please refer to:
+👉 **[IoT Learning Journey Curriculum (CURRICULUM.md)](./docs/CURRICULUM.md)**
 
-### ✅ Lesson Checklist
-
-- [x] **Lesson 1:** Internet of Things
-- [x] **Lesson 2:** Model Installation
-- [x] **Lesson 3:** Hello World
-- [x] **Lesson 4:** Remote Control LED
-- [x] **Lesson 5:** RGB Module
-- [x] **Lesson 6:** Active Buzzer
-- [x] **Lesson 7:** DHT11 Sensor
-- [x] **Lesson 8:** Switching Door
-- [x] **Lesson 9:** Gas Detection
-- [x] **Lesson 10:** Flame Detection
-- [x] **Lesson 11:** Sound Sensor
-- [x] **Lesson 12:** Light Sensor
-- [x] **Lesson 13:** PIR Motion Detection
-- [x] **Lesson 14:** LCD Screen
-- [x] **Lesson 15:** 1-Channel Relay
-- [x] **Lesson 16:** RFID Switching Door
-- [x] **Lesson 17:** Tracing Human Movement
-- [x] **Lesson 18:** Two Mega-IoT Devices
-- [x] **Lesson 19:** IoT Capstone Project
+### Current Focus: Phase 2 - Smart Home Dashboard 🚀
+Building a cross-platform client to interact with the hardware. Track our development progress on GitHub:
+👉 **[Smart Home Dashboard Project](https://github.com/users/Jihyun-Park0/projects/2)**
