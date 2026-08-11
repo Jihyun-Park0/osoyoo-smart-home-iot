@@ -16,8 +16,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import org.jetbrains.compose.resources.painterResource
 
-import osoyoosmarthomedashboard.shared.generated.resources.Res
-import osoyoosmarthomedashboard.shared.generated.resources.compose_multiplatform
+import osoyoo_smart_home_iot.shared.generated.resources.Res
+import osoyoo_smart_home_iot.shared.generated.resources.compose_multiplatform
 
 @Composable
 @Preview

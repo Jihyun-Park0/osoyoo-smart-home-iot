@@ -10,16 +10,35 @@ bin/
 .DS_Store
 Thumbs.db
 
-# IDE settings (VS Code / Arduino IDE)
+# IDE settings (VS Code / Arduino IDE / Android Studio)
 .vscode/
 .arduino/
-
-# Arduino Secret Configurations
-my_secrets.zip
-arduino_secrets.h
-
-# Android Studio / IntelliJ IDEA
 .idea/
 *.iml
 *.iws
 .gradle/
+.kotlin/
+.artifacts/
+
+# Local Properties
+local.properties
+
+# Android / iOS / Kotlin Multiplatform
+**/build/
+xcuserdata
+!src/**/build/
+captures
+.externalNativeBuild
+.cxx
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
+!*.xcworkspace/contents.xcworkspacedata
+**/xcshareddata/WorkspaceSettings.xcsettings
+node_modules/
+kotlin-js-store/
+
+# Arduino Secret Configurations
+my_secrets.zip
+arduino_secrets.h

@@ -1,4 +1,4 @@
-rootProject.name = "OSOYOOSmartHomeDashboard"
+rootProject.name = "osoyoo-smart-home-iot"
 
 pluginManagement {
     repositories {
@@ -32,6 +32,13 @@ plugins {
 }
 
 include(":androidApp")
+project(":androidApp").projectDir = file("client/androidApp")
+
 include(":desktopApp")
+project(":desktopApp").projectDir = file("client/desktopApp")
+
 include(":shared")
+project(":shared").projectDir = file("client/shared")
+
 include(":webApp")
+project(":webApp").projectDir = file("client/webApp")

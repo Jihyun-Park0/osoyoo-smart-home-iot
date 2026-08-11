@@ -1,4 +1,5 @@
 #!/bin/sh
+unset ANDROID_PREFS_ROOT
 
 #
 # Copyright © 2015 the original authors.
@@ -65,6 +66,7 @@
 ##############################################################################
 
 # Attempt to set APP_HOME
+unset ANDROID_PREFS_ROOT
 
 # Resolve links: $0 may be a link
 app_path=$0
